@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoop Spots</title>
+    <link rel="stylesheet" href="style index.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="index.html"><img src="logo.png" class="logo"></a>
+            <div class="toggle" onclick="toggleMenu();"></div>
+            <ul class="navigation">
+                <li><a href="carambol.html">Products</a></li>
+                <li><a href="about us.html">About Us</a></li>
+            </ul>
+        </header>
+        <div class="imgBox">
+            <img src="logo homepage.png" class="starbucks">    
+        </div> 
+
+        <div class="content">
+            <div class="textBox">
+                <p>Interested in trying different types of ice cream at various locations within Universitas Indonesia? If that's the case, <b>Scoop Spots</b> is the perfect website for you. Let's be prepared for a sweet and chill exploration! 🍦🧚‍♀️</p>
+            </div>       
+        </div>
+        </div>
+        <ul class="thumb">
+            <li><a href="carambol.html"><img src="thumb1.png"></a></li>
+            <li><a href="dips.html"><img src="thumb4.png"></a></li>
+            <li><a href="tumini.html"><img src="thumb5.png"></a></li>    
+        </ul>
+    </section>
+
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.starbucks').src = anything;
+        }
+        
+        function toggleMenu(){
+            var menuToggle = document.querySelector('.toggle');
+            var navigation = document.querySelector('.navigation')
+            menuToggle.classList.toggle('active')
+            navigation.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>

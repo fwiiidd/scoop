@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How To Get Carambol Ice Cream</title>
+    <link rel="stylesheet" href="style carambol.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="index.html"><img src="logo.png" class="logo"></a>
+            <div class="toggle" onclick="toggleMenu();"></div>
+            <ul class="navigation">
+                <li><a href="carambol.html">Home</a></li>
+                <li><a href="about us.html">About Us</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>It's Viral Now!<br>It's <span>Carambol</span></h2>
+                <p>Ice Cream Sandwich a.k.a <b>Carambol</b> by <b>Coffside</b> on <b>Vocational Education</b>, is a favorite dessert by many students from UI and even beyond UI. Its famous cause of the viral carambol meme on social media such as Tiktok and Twitter.<br>
+                    <br>
+                    <b>When is Carambol open?</b> Open from 9 AM - 5 PM but there's always a long queue for Carambol especially if you come during lunch time.<br>
+                    <br>
+                    <b>How much is Carambol?</b> 15k for 4 scoop of ice cream, 2 toppings, and a piece of bread. </p>
+                <a href="contact us.html">Contact Us</a>
+            </div> 
+            <div class="imgBox">
+                <img src="img1.png" class="starbucks">    
+             </div>        
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><a href="carambol.html"><img src="thumb1.png" onclick="imgSlider('img1.png');changeCircleColor('#5799C7')"></a></li>
+            <li><a href="dips.html"><img src="thumb4.png" onclick="imgSlider('img4.png');changeCircleColor('#50B172')"></a></li>
+            <li><a href="tumini.html"><img src="thumb5.png" onclick="imgSlider('img5.png');changeCircleColor('#E6D136')"></a></li>
+            
+        </ul>
+        <ul class="sci">
+            <li><a href="https://www.instagram.com/coffside.id/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="><img src="instagram.png"></a></li>
+            <li><a href="https://www.tiktok.com/@coffside.id?is_from_webapp=1&sender_device=pc"><img src="tiktok.png"></a></li>
+            <li><a href="map carambol.html"><img src="map.png"></a></li>
+        </ul>
+    </section>
+
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.starbucks').src = anything;
+        }
+
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+        
+        function toggleMenu(){
+            var menuToggle = document.querySelector('.toggle');
+            var navigation = document.querySelector('.navigation')
+            menuToggle.classList.toggle('active')
+            navigation.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>

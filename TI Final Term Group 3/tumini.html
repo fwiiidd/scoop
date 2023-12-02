@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How To Get Tumini Ice Cream</title>
+    <link rel="stylesheet" href="style tumini.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="home.html"><img src="logo.png" class="logo"></a>
+            <div class="toggle" onclick="toggleMenu();"></div>
+            <ul class="navigation">
+                <li><a href="carambol.html">Home</a></li>
+                <li><a href="about us.html">About Us</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>The ice cream of FIB!<br>It's <span>Tumini Ice Cream</span></h2>
+                <p>The hidden gem of <b>Cultural Science Faculty (FIB)</b>, <b>Tumini</b> is an Ice cream parlor with many toppings and flavors including vanilla and choclate, fruity flavors like strawberry and manggo, and also green tea, though many said that it taste slightly like durian.</b><br>
+                    <br>
+                    <b>When is Tumini Ice Cream open?</b> Open from 9 AM - 5 PM.<br>
+                    <br>
+                    <b>How much is Tumini Ice Cream?</b> 8k for the ice cream without topping and 10k with toppings. </p>
+                <a href="contact us.html">Contact Us</a>
+            </div> 
+            <div class="imgBox">
+                <img src="img5.png" class="starbucks">    
+             </div>        
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><a href="carambol.html"><img src="thumb1.png" onclick="imgSlider('img1.png');changeCircleColor('#5799C7')"></a></li>
+            <li><a href="dips.html"><img src="thumb4.png" onclick="imgSlider('img4.png');changeCircleColor('#50B172')"></a></li>
+            <li><a href="tumini.html"><img src="thumb5.png" onclick="imgSlider('img5.png');changeCircleColor('#E6D136')"></a></li>
+            
+        </ul>
+        <ul class="sci">
+            <li><a href="map tumini.html"><img src="map.png"></a></li>
+        </ul>
+    
+    </section>
+
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.starbucks').src = anything;
+        }
+
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+        
+        function toggleMenu(){
+            var menuToggle = document.querySelector('.toggle');
+            var navigation = document.querySelector('.navigation')
+            menuToggle.classList.toggle('active')
+            navigation.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
